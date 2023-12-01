@@ -15,3 +15,6 @@
     - And also deployed it by using [vercel-cli](https://vercel.com/docs/cli/deploying-from-cli).
 
 It was fun :).
+
+
+Ah, I forgot to put the link. It's [here](https://vite-project-beta-three.vercel.app/)
