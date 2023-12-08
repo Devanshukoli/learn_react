@@ -1,0 +1,1 @@
+- Mostly recommanded to write `functional components` instead of `class components`.
