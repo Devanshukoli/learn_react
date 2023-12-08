@@ -13,3 +13,10 @@
 
 - It is a term used in react to desribe the process of passing data from a parent component to da deeply nested child component through intermediary component to a deeply nested child component through that intermediary component.
 - It can only occur when you have a component hirerarchy.
+
+--- 
+- If you want to render a component in react.js then write their name in **Upperlater** with. 
+for example
+```
+<Dosomething />
+```
