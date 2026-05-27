@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import AddTask from './AddTask.js';
-import TaskList from './TaskList.js';
+import AddTask from './AddTask.jsx';
+import TaskList from './TaskList.jsx';
 
 export default function TaskApp() {
   const [tasks, setTasks] = useState(initialTasks);
