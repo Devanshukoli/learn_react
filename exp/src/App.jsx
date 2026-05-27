@@ -1,6 +1,7 @@
 import { useReducer } from 'react';
 import AddTask from './AddTask.jsx';
 import TaskList from './TaskList.jsx';
+import tasksReducer from './TaskReducer.jsx';
 
 export default function TaskApp() {
   const [tasks, dispatchEvent] = useReducer(tasksReducer, initialTasks);
@@ -27,30 +28,6 @@ export default function TaskApp() {
     })
   }
 
-  function tasksReducer(tasks, action) {
-    if (action.type === 'added') {
-      return [
-        ...tasks,
-        {
-          id: action.id,
-          text: action.text,
-          done: false
-        }
-      ]
-    } else if (action.type === 'changed') {
-      return tasks.map((t) => {
-        if (t.id === action.task.id) {
-          return action.task
-        } else {
-          return t;
-        }
-      })
-    } else if (action.type === 'deleted') {
-      return tasks.filter((t) => t.id !== action.id)
-    } else {
-      throw Error('Unknown actions: ' + action.type)
-    }
-  }
 
   return (
     <>
